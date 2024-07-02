@@ -20,7 +20,8 @@ async function main() {
 
 
     // Initialize Daikin Cloud Instance
-    const tokenSet = await DaikinCloud.getAccessTokenFromAuthToken(process.env.ONECTA_CLIENT_ID, process.env.ONECTA_CLIENT_SECRET, 'st2.s.AtLt3aMM3A.KLKaNPx7URdh52bRi7yNw_xwhWVpVg0JjZqMBbbNfqiNqXS8v2i9hJVpfHTJO_v6CLky15-P6YBBCnn76JRMalyLFjxMZ_9ZrfR3m0Fgjn9UN6ZdxHtQsi9v9U_BokLq.NJ0Y0b8aXGS75CxAs0ZQeDPkUpp9wLd9PMCd7U1g0Lql05JZ6Wn4a4wcOM8UyjFPtB99Zkijy3fkUETmlr2S_w.sc3');
+    const code = 'st2.s.AtLt6fm1zQ.24XUWLEIDwzieTj2uhIKU1ioTEnLPBLoLhlx8ggrD7rRCBXoGGPUBgicT94XbbsozZQmZZwGUTakmsYqMj3W6-XRI4c21xWpXiWKO_KbFiJx8GJEvPsDyOcPlAc1T7Zk.2aV8HEDViSaPx441vf_ytYMw0PldQ6yUWqyBZ61se4eVamJ8GVXd4smDRhpecA8r2IEgeZH24k6h_GECDW9OHA.sc3'
+    const tokenSet = await DaikinCloud.getAccessTokenFromAuthToken(process.env.ONECTA_CLIENT_ID, process.env.ONECTA_CLIENT_SECRET, code, 'https://www.jeroenvdb.be');
 
     console.log(tokenSet);
 }
